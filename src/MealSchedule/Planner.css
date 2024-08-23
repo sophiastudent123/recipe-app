@@ -1,0 +1,5 @@
+.weekday{
+    display: grid;
+    grid-template-columns: repeat(7, auto); 
+    gap: 1
+}
