@@ -3,3 +3,33 @@
     grid-template-columns: repeat(7, auto); 
     gap: 1
 }
+
+.add-item-container {
+    
+    position: relative;
+   z-index:  4;
+  }
+  .add-item-menu {
+    
+   border: solid;
+   border-radius: 10px;
+   display: flexbox;
+   align-items: center;
+
+  }
+
+  .add-item-menu a:hover {
+    cursor: pointer;
+  }
+
+  .dropdown-menu {
+    display: none;
+    margin-left: 250px;
+    margin-top: 200px;
+  }
+
+  .planner-week {
+    position: relative;
+    z-index: 1;
+  }
+  
