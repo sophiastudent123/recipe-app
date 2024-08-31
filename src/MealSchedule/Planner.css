@@ -1,5 +1,164 @@
-.weekday{
-    display: grid;
-    grid-template-columns: repeat(7, auto); 
-    gap: 1
+.body {
+  align-items: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.add-item-container {
+    display: block;
+    text-align: center;
+    position: relative;
+   
+  }
+  .add-item-menu {
+    
+  
+   display: flexbox;
+   align-items: center;
+
+  }
+
+  .add-item-menu a:hover {
+    cursor: pointer;
+  }
+
+  .dropdown-menu {
+    border: solid gray;
+    display: block;
+    text-align: center;
+    border-radius: 10px;
+    display: none;
+   padding-bottom: 10px;
+   margin-left: 180px;
+    max-width: 500px;
+    z-index:  4;
+  }
+
+  .planner-week {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: column; /* Aligns children (inputs) vertically */
+    gap: 10px; /* Adds space between each input field */
+  }
+  
+  input {
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    margin: 0;
+    box-sizing: border-box; /* Ensures padding and border are included in the total width and height */
+  }
+
+  .delete-button {
+    padding: 9px;
+    border: 0.5px solid gray;
+    border-radius: 10px;
+  }
+
+  .add-ingredient-button {
+    max-width: 150px;
+    align-self: center;
+    padding: 9px;
+    border: 0.5px solid gray;
+    border-radius: 10px;
+  }
+
+  .add-meal-button {
+    margin-top: 10px;
+    padding: 9px;
+    border: 0.5px solid gray;
+    border-radius: 10px;
+  }
+
+  .food-list-monday {
+    margin-top: 10px;
+     border-right: 0.5px;
+     border: solid 0.5px gray;
+     border-radius: 30px;
+
+  }
+  .food-list-tuesday{
+    margin-top: 10px;
+     border-right: 0.5px;
+     border: solid 0.5px gray;
+     border-radius: 30px;
+  }
+  .food-list-wednesday {
+    margin-top: 10px;
+     border-right: 0.5px;
+     border: solid 0.5px gray;
+     border-radius: 30px;
+  }
+  .food-list-thursday {
+    margin-top: 10px;
+     border-right: 0.5px;
+     border: solid 0.5px gray;
+     border-radius: 30px;
+  }
+  .food-list-friday {
+    margin-top: 10px;
+     border-right: 0.5px;
+     border: solid 0.5px gray;
+     border-radius: 30px;
+  }
+  .food-list-saturday {
+    margin-top: 10px;
+     border-right: 0.5px;
+     border: solid 0.5px gray;
+     border-radius: 30px;
+  }
+
+  .food-list-sunday{
+    margin-top: 10px;
+     border-right: 0.5px;
+     border: solid 0.5px gray;
+     border-radius: 30px;
+  }
+  .weekday {
+    display: block;
+    text-align: center;
+  }
+
+  .week-delete-button {
+    margin-left: 10px;
+    max-width: 150px;
+    
+    padding: 4px;
+    border: 0.5px solid gray;
+    border-radius: 10px;
+  }
+
+  select {
+    border: none;
+    padding: 9px;
+    border-radius: 10px;
+  }
+
+  a {
+    display: block;
+    max-width: 65px;
+    border: 0.5px solid gray;
+    padding: 9px;
+    background-color: rgb(216, 213, 213);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+  }
+  .a-types {
+    display: flex;
+    flex-direction: row;
+    
+    
+  }
+  strong {
+    cursor: pointer;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  .add-item
