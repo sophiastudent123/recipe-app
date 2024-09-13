@@ -1,5 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Planner.css";
+import { BrowserRouter as Router, Routes, Route, Link, BrowserRouter, createBrowserRouter } from 'react-router-dom';
+import Recipe from "../Recipe/Recipe";
 
 const MealPlanner = () => {
   // document elements
@@ -7,6 +9,10 @@ const MealPlanner = () => {
   const ingredientButton = useRef();
   const titleRecipeValue = useRef();
   const dayWeekValue = useRef();
+
+  //create router
+
+  
   //state for when to show dropdown menu
 
   const [dropdownState, setDropdownState] = useState(false);
@@ -212,9 +218,19 @@ const MealPlanner = () => {
       saveData("sunday", sunday);
     }
   }, [sunday]);
+  
+  /////////////////////reutrn////////////////
+  
   return (
     <div className="planner-container">
-      <h1>Meal Planner Scheducle</h1>
+      <h1>Meal Planner Scheducle</h1> 
+      <ul>
+      <li>
+        <Link to="../Recipe"></Link>
+      </li>
+      </ul>
+      
+      
       <div className="add-item-container">
         <div className="add-item-menu">
           <div className="a-types">
@@ -427,7 +443,7 @@ const MealPlanner = () => {
         </div>
       </div>
     </div>
-    </div>
+    
   );
 };
 
